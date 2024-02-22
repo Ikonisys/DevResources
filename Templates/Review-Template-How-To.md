@@ -39,9 +39,13 @@ Replace YYYY-MM-DD with the actual date of your review.
 
 #### Step 2: Push Your Review to GitHub
 Push your review document to GitHub:
+Create a new branch prefixed with review/ followed by a descriptive name that indicates the focus of the review. For example, if you're submitting a workflow review conducted in March 2023, you might name your branch `review/workflow-2023-03`. Use the following command to create and switch to your new branch:
 **cmd**
-`git push origin main`
-Replace main with the appropriate branch name if different.
+`git checkout -b review/your-branch-name`
+Once your review branch is ready and you have committed the review document to this branch, push it to GitHub with the following command:
+**cmd**
+`git push origin review/your-branch-name`
+Replace review/your-branch-name with the name of your review branch.
 
 #### Step 3: Open a Pull Request
 On GitHub, navigate to your repository and click on "Pull Requests".
